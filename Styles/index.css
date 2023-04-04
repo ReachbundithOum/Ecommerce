@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+/*############## --Navbar-- ###############*/
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 150px;
+    justify-content: space-between;
+  }
+  nav, ul{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    list-style: none;
+    column-gap: 20px;
+  }
+nav ul li a {
+    color: black;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+nav ul li a:hover{
+    color:#CFD8DC;
+}
+/*############## --Navbar-End-- ###############*/
+
+/*############## --Shop-- ###############*/
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+} 
+.col-3{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom:0px;
+  transition: transform 0.4s;
+}
+.col-3 img{
+  width: 250px;
+}
+.col-3:hover{
+  transform: translateY(-15px);
+}
+.col-3 p{
+  font-size: 16px;
+  color: #FA06DA;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 10px;
+}
+.col-3 span{
+  font-family: 'Oswald', sans-serif;
+}
+.col-3 h6{
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+
+/*############## --Shop-- ###############*/
+.scrollTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30%;
+  border-radius: 1px solid #fff;
+}
+.scrollTop:hover{
+  background-color: #f7f7f7;
+  color: #000;
+}

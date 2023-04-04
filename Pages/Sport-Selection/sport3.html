@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!-- ################ Style Css ################ -->
+    <link rel="stylesheet" href="/BC/Pages/Sport-Selection/Sport-Style/sport1.css">
+
+    <!-- ################ Boostrap ############### -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- ################ Font awesome ############# -->
+    <script src="https://kit.fontawesome.com/df974fea5b.js" crossorigin="anonymous"></script>
+
+    <!-- ################ Favicon #################-->
+    <link rel="shortcut icon" type="image/png" href="/BC/Images/favicon1.png">
+
+    <!-- ################ Boostrap Icon #####################-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container mb-5">
+        <!--############# --Header-- #############-->
+        <nav>
+            <h1 class=" text-black"> Tazji </h1>
+                <ul class="mt-2 ">
+                    <li><a href="/BC/Pages/index.html" target="_self">Home</a></li>
+                    <li><a href="/BC/Pages/product-selection/product.html" target="_self">Products</a></li>
+                    <li><a href="/BC/Pages/contact.html" target="_self">Contact Us</a></li>
+                    <li><a href="/BC/Pages/cart.html" target="_self"><i class="bi bi-cart3"></i></a></li>
+                    <li>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search here.." aria-label="Recipient's username" aria-describedby="search">
+                                <button class="input-group-text" id="search"><i class="bi bi-search-heart"></i></button>
+                          </div>
+                    </li>
+                    <li><a href="/BC/Pages/Log.html" target="_self">Sign in <i class="bi bi-box-arrow-in-right"></i></a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!--############# -- Header -- #############-->
+
+        <!--############# -- Categories -- #########-->
+        <div class="flex-box">
+            <div class="left">
+                <div class="big-img">
+                    <img src="/BC/Images/product/Sports/Men-sport-short/Men-Sport-Short.jpg" onclick="showImg(this.src)"> 
+                </div>
+                <div class="images ">
+                    <div class="small-img">
+                        <img src="/BC/Images/product/Sports/Men-sport-short/Men-Sport-Short.jpg" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="/BC/Images/product/Sports/Men-sport-short/Men-Sport-Shorts-1.jpg" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="/BC/Images/product/Sports/Men-sport-short/Men-Sport-Shorts-2.jpg" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small-img">
+                        <img src="/BC/Images/product/Sports/Men-sport-short/Men-Sport-Shorts-3.jpg" onclick="showImg(this.src)">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="url">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Products</li>
+                    </ol>
+                  </nav>
+                </div>
+                  <div class="price">
+                    <p class="sname">US $9.90 <span class="text-black ">&nbsp;40% </span> <del class="text-secondary">US $16.50 </del> <i class="bi bi-heart float-end text-black"></i></p>
+                    <h6>Men Sport Shorts</h6>
+                  </div>
+                  <div class="size">
+                    <h3 class="text-black">Size</h3>
+                        <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: 0.4rem;--bs-btn-padding-x: 0.4rem;"></button>
+                            <span>Model is 174 cm tall / 60 kg weight and is wearing size M.</span>
+
+                            <select class="form-select mt-3 mb-3">
+                                <option> Select available size </option>
+                                <option>XS</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                            
+                            <button type="button" class="form-control bg-black text-white">Add to bag</button>
+                  </div>
+            </div>
+        </div>
+
+        <!--############# -- Footer-Section ########### -->
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-1 mb-1">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <ul class="nav justify-content-center pb-1 mb-1">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-facebook"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-instagram"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-twitter"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i class="bi bi-youtube"></i></a></li>
+            
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+          
+        </footer>
+    </div>
+
+        <script>
+            let bigImg = document.querySelector('.big-img img');
+            function showImg(pic){
+                bigImg.src = pic;
+            }
+        </script>
+      
+</body>
+</html>
+<!--border-bottom-->
